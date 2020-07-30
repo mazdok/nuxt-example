@@ -10,6 +10,7 @@
           class="w-full max-w-lg mx-auto bg-white p-8 rounded"
           method="POST"
           data-netlify="true"
+          netlify
         >
           <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
