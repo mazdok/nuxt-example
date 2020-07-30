@@ -1,4 +1,5 @@
 module.exports = {
+  target: 'static',
   /*
   ** Headers of the page
   */
@@ -40,6 +41,7 @@ module.exports = {
   ],
   modules: [
     '@nuxtjs/axios',
-  ],
+    '@nuxt/content'
+  ]
 }
 

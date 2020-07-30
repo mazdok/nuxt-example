@@ -1,28 +1,32 @@
 <template>
-  <div class="pt-24">
-    <section class="border-b py-8">
-      <div class="container mx-auto flex flex-wrap pt-4 pb-8">
-        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Blog</h1>
-      </div>
-    </section>
+  <div class="pt-24 px-6">
+    <h1>Blog Posts</h1>
+    <ul>
+      <li v-for="article of blogs" :key="article.slug" class="bg-gray-200 rounded my-4 p-5">
+        <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+          <img :src="article.img" />
+          <div class="text-gray-800">
+            <h2>{{ article.title }}</h2>
+            <p>by {{ article.author }}</p>
+            <p>{{ article.description }}</p>
+          </div>
+        </NuxtLink>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
-  // async asyncData({ $axios }) {
-  //   const users = await $axios.$get(
-  //     "https://jsonplaceholder.typicode.com/users"
-  //   );
-  //   return { users };
-  // },
-  // data: () => ({
+  async asyncData({ $content, params }) {
+    const blogs = await $content("blogs", params.slug)
+      .only(["title", "description", "img", "slug", "author"])
+      .sortBy("createdAt", "asc")
+      .fetch();
 
-  // }),
-  // methods: {
-  //   openUser(user) {
-  //     this.$router.push("/blog/" + user);
-  //   },
-  // },
+    return {
+      blogs,
+    };
+  },
 };
 </script>
