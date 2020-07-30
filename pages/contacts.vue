@@ -8,7 +8,7 @@
 
         <form
           class="w-full max-w-lg mx-auto bg-white p-8 rounded"
-          method="POST"
+          action="POST"
           data-netlify="true"
         >
           <div class="flex flex-wrap -mx-3 mb-6">
