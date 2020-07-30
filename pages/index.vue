@@ -846,6 +846,13 @@
 
 <script>
 export default {
+  head() {
+    return {
+      script: [
+        { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
+      ],
+    };
+  },
   components: {},
   mounted() {
     /**
@@ -853,20 +860,20 @@ export default {
      */
     if (process.client) {
       const header = document.getElementById("header");
-      const brand = document.querySelector('.brand')
+      const brand = document.querySelector(".brand");
 
-      window.addEventListener('scroll', () => {
+      window.addEventListener("scroll", () => {
         const scrollpos = window.scrollY;
         if (scrollpos > 10) {
-          header.classList.add('bg-white')
-          brand.classList.add('text-gray-800')
+          header.classList.add("bg-white");
+          brand.classList.add("text-gray-800");
         } else {
-          header.classList.remove('bg-white')
-          brand.classList.remove('text-gray-800')
+          header.classList.remove("bg-white");
+          brand.classList.remove("text-gray-800");
         }
-      })
+      });
     }
-  }
+  },
 };
 </script>
 
