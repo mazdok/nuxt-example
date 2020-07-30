@@ -42,6 +42,9 @@ module.exports = {
   modules: [
     '@nuxtjs/axios',
     '@nuxt/content'
-  ]
+  ],
+  content: {
+    dir: 'assets/content'
+  }
 }
 

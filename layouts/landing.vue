@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-gray-200">
-    <Navbar isStatic="true" />
+  <div class="gradient leading-normal tracking-normal text-white">
+    <Navbar />
 
     <nuxt />
   </div>
@@ -17,5 +17,8 @@ export default {
 </script>
 
 <style>
+.gradient {
+  background: linear-gradient(90deg, #192c44 0%, #41c59e 100%);
+}
 </style>
 

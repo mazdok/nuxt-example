@@ -846,6 +846,7 @@
 
 <script>
 export default {
+  layout: 'landing',
   head() {
     return {
       script: [
@@ -880,12 +881,6 @@ export default {
 <style>
 body {
   font-family: "Source Sans Pro", sans-serif;
-  @apply leading-normal tracking-normal text-white gradient;
-}
-
-.gradient {
-  /* background: linear-gradient(90deg, #d53369 0%, #daae51 100%); */
-  background: linear-gradient(90deg, #192c44 0%, #41c59e 100%);
 }
 </style>
 

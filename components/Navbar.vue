@@ -1,6 +1,6 @@
 <template>
   <!--Nav-->
-  <nav id="header" class="fixed w-full z-30 top-0 text-white">
+  <nav id="header" :class="['fixed', 'w-full', 'z-30', 'top-0', 'text-white', {'is-static': isStatic}]">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
       <div class="pl-4 flex items-center">
         <a
@@ -55,5 +55,18 @@
 
 <script>
 export default {
+  props: {
+    isStatic: Boolean
+  }
 };
 </script>
+
+<style scoped lang="postcss">
+  nav.is-static {
+    @apply bg-white shadow-sm;
+  }
+
+  nav.is-static .brand {
+    @apply text-gray-800;
+  }
+</style>

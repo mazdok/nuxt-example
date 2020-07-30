@@ -3,7 +3,7 @@
     <section class="border-b py-8">
       <div class="container mx-auto flex flex-wrap pt-4 pb-8">
         <h1
-          class="w-full my-2 mb-12 text-5xl font-bold leading-tight text-center text-white"
+          class="w-full my-2 mb-12 text-5xl font-bold leading-tight text-center text-gray-600"
         >Contacts</h1>
 
         <form
