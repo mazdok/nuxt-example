@@ -23,11 +23,13 @@
         <h1
           class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl"
         >{{blog.title}}</h1>
-        <p class="text-sm md:text-base font-normal text-gray-600">Published {{formatDate(blog.date)}}</p>
+        <p
+          class="text-sm md:text-base font-normal text-gray-600"
+        >Published {{formatDate(blog.date)}}</p>
       </div>
 
       <!--Post Content-->
-
+      <nuxt-content :document="blog" class="py-6" />
       <!--Lead Para-->
       <p class="py-6">
         👋 Welcome fellow
