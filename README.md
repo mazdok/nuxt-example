@@ -1,8 +1,8 @@
-# A Nuxt.js landing page with a blog
+# A Nuxt.js blog
 
-![preview]('./static/preview.png')
+![Alt Text](./static/preview.png)
 
-## A dummy demo project to test a Nuxt.js application with a Netlify CMS
+## A dummy demo project to test a Nuxt.js application with a Netlify CMS and a Nuxt content API
 
 ### (Dirty and has a lot of static markup)
 
