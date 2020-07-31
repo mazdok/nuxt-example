@@ -2,10 +2,14 @@
   <div class="pt-24">
     <section class="border-b py-8">
       <div class="container mx-auto flex flex-wrap pt-4 pb-8">
-        <h1
-          class="w-full my-2 mb-12 text-5xl font-bold leading-tight text-center text-gray-600"
-        >Contacts</h1>
+        <h1 class="w-full my-2 mb-6 text-6xl font-bold leading-tight text-center">Contact us</h1>
 
+        <!--
+          In order to make form actually work with Netlify CMS you need to add:
+          - a data attribute
+          - action method to a form
+          - name attribute to each input
+        -->
         <form
           class="w-full max-w-lg mx-auto bg-white p-8 rounded"
           action="POST"
@@ -18,13 +22,12 @@
                 for="grid-first-name"
               >First Name</label>
               <input
-                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 id="grid-first-name"
                 type="text"
                 name="name"
                 placeholder="Jane"
               />
-              <p class="text-red-500 text-xs italic">Please fill out this field.</p>
             </div>
             <div class="w-full md:w-1/2 px-3">
               <label
