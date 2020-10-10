@@ -35,9 +35,29 @@ module.exports = {
       }
     }
   },
-  buildModules: ["@nuxtjs/tailwindcss"],
-  modules: ["@nuxtjs/axios", "@nuxt/content"],
+  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/netlify-files"],
+  modules: ["@nuxtjs/axios", "@nuxt/content", "nuxt-i18n"],
   content: {
     dir: "assets/content"
+  },
+  i18n: {
+    locales: [
+      {
+        code: "en",
+        name: "English",
+        file: "en.json"
+      },
+      {
+        code: "fr",
+        name: "Français",
+        file: "fr.json"
+      }
+    ],
+    defaultLocale: "en",
+    lazy: true,
+    langDir: "./locales/",
+    vueI18n: {
+      fallbackLocale: "en"
+    }
   }
 };

@@ -48,6 +48,13 @@
               class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
             >Blog</nuxt-link>
           </li>
+          <li class="mr-3">
+            <nuxt-link
+              v-for="locale in availableLocales"
+              :key="locale.code"
+              :to="switchLocalePath(locale.code)"
+            >{{ locale.name }}</nuxt-link>
+          </li>
         </ul>
       </div>
     </div>
@@ -60,6 +67,11 @@
 export default {
   props: {
     isStatic: Boolean,
+  },
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale);
+    },
   },
 };
 </script>
