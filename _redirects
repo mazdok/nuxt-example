@@ -1,9 +1,1 @@
-/path/* https://example.com/path/:splat 302!
-
-# it works:
-# /path/* name=:value https://example.com/path/to/page?name=ferret&color=purple
-# /path/* name=:value color=:color https://example.com/path/to/page?name=:value&color=:color
-# /path/* name=:value color=:color https://example.com/path/:splat?name=:value&color=:color
-# (proxy) /path/* https://example.com/path/:splat 200
-
-# url to try - https://laughing-colden-8d6368.netlify.app/path/to/page?name=ferret&color=purple
+/path/* https://example.com/path/:splat 301!
