@@ -1,7 +1,4 @@
-/path/* https://example.com/path/:splat 301
-
-# /path/to/page?name=ferret&color=purple https://example.com/path/to/page?name=ferret&color=purple
-
+/path/* https://example.com/path/:splat
 
 # it works:
 # /path/* name=:value https://example.com/path/to/page?name=ferret&color=purple
