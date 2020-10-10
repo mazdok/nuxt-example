@@ -1,4 +1,4 @@
-/path/* name=:value https://example.com/path/to/page:value
+/path/* name=:value https://example.com/path/to/page?name=:value
 
 # /path/to/page?name=ferret&color=purple https://example.com/path/to/page?name=ferret&color=purple
 
