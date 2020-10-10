@@ -1,3 +1,5 @@
-/path/* name=:value https://example.com/path/to/page?name=ferret&color=purple
+/path/* name=:value https://example.com/path/to/page:value
 
 # /path/to/page?name=ferret&color=purple https://example.com/path/to/page?name=ferret&color=purple
+
+# it works - /path/* name=:value https://example.com/path/to/page?name=ferret&color=purple
