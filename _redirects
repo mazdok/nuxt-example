@@ -1,1 +1,3 @@
-/path/to/page?name=ferret&color=purple https://example.com/path/to/page?name=ferret&color=purple
+/path/* https://example.com/path/:splat
+
+# /path/to/page?name=ferret&color=purple https://example.com/path/to/page?name=ferret&color=purple
