@@ -1,1 +1,1 @@
-/path/* name=:value color=:color https://example.com/path/:splat?name=:value&color=:color
+/path/* https://example.com/path/:splat 200
